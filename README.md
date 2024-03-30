@@ -1,10 +1,28 @@
-# Operação aritimética
-<p>
-Neste caso específico, foi desenvolvida uma função chamada "calculadoraDesconto" exclusivamente utilizando JavaScript. Essa função recebe dois parâmetros: o valor original de um produto e a porcentagem de desconto a ser aplicada. O propósito principal da função é calcular e retornar o valor final do produto após a aplicação do desconto.
-</p>
+# Calculadora de Desconto
 
-<h3>Exemplo:</h3>
-<p>
-Ao receber os parâmetros "valorOriginal" (200) e "percentagemDesconto" (25), a função "calculadoraDesconto" calcula um desconto de 25% num produto que originalmente custava 200 unidades monetárias. O resultado final, armazenado na variável "valorFinal", foi de 150 unidades monetárias, representando o novo valor do produto após o desconto ser aplicado.
-</p>
-![image](https://github.com/leonardoasantos1/Opearacao-aritimetica/assets/147885301/b47ebaa4-8ca4-48ae-8ef9-a401e693d65c)
+## Objetivo
+A função `calculadoraDesconto` calcula o valor final após aplicar um desconto percentual sobre um valor original.
+
+## Parâmetros
+- `valorOriginal`: O valor original antes do desconto.
+- `porcentagemDesconto`: A porcentagem de desconto a ser aplicada sobre o valor original.
+
+## Retorno
+A função retorna o valor final após o desconto ter sido aplicado.
+
+## Funcionamento
+1. Calcula o valor do desconto utilizando a fórmula: `(porcentagemDesconto * valorOriginal) / 100`.
+2. Subtrai o valor do desconto do valor original: `valorOriginal - desconto`.
+3. Retorna o valor final após o desconto.
+
+## Exemplo de Uso
+```javascript
+const valorOriginal = 200; 
+const porcentagemDesconto = 25; 
+const valorFinal = calculadoraDesconto(valorOriginal, porcentagemDesconto);
+
+console.log('Valor original: R$', valorOriginal.toFixed(2));
+console.log('Porcentagem de desconto:', porcentagemDesconto + '%');
+console.log('Valor final após desconto: R$', valorFinal.toFixed(2));
+```
+Neste exemplo, o código calcula o desconto de 25% sobre um valor original de R$ 200.
